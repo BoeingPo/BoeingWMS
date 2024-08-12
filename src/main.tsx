@@ -9,8 +9,14 @@ import {
 } from "react-router-dom";
 import HomePage from './views/Homepage.tsx';
 import About from './views/about.tsx';
+import FormPages from './Pages/Formpage.tsx';
 
 const router = createBrowserRouter([
+  {
+    path:"/Form",
+    element:<FormPages/>
+  }
+  ,
   {
     path: "/about",
     element: <About/>,
